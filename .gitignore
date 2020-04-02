@@ -2,6 +2,10 @@
 !*/
 !*.*
 
+CMakeLists.txt
+
 .idea/
 .vscode/
 *.dSYM/
+cmake-build-debug/
+

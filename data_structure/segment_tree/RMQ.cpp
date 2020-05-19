@@ -16,17 +16,24 @@ struct RMQ {
     num = x;
   }
 
-  void update(int i, T x) {
-    i += num - 1;
-    dat[i] = x;
-    while (i > 0) {
-      i = (i - 1) / 2;
-      dat[i] = min(dat[i * 2 + 1], dat[i * 2 + 2]);
+  T at(int idx) {
+    idx += num - 1;
+    return dat[idx];
+  }
+
+  void update(int idx, T x) {
+    idx += num - 1;
+    dat[idx] = x;
+    while (idx > 0) {
+      idx = (idx - 1) / 2;
+      dat[idx] = min(dat[idx * 2 + 1], dat[idx * 2 + 2]);
     }
   }
 
   // get the minimum value in [a, b)
-  T query(int a, int b) { return query_sub(a, b, 0, 0, num); }
+  T query(int a, int b) {
+    return query_sub(a, b, 0, 0, num);
+  }
 
   T query_sub(int a, int b, int k, int l, int r) {
     if (r <= a || b <= l) {

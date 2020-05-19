@@ -1,5 +1,9 @@
 # C++ Library
 
+## function
+- greatest common divisor ([gcd.cpp](./function/gcd.cpp))
+- least common multiple ([gcd.cpp](./function/gcd.cpp))
+
 ## Data Structure
 - Union Find Tree ([unionfind.cpp](./data_structure/unionfind.cpp))
 - Segment Tree
@@ -8,7 +12,7 @@
 ## Mod Operation
 - mint (mod int) ([mint.cpp](./mod/mint.cpp))
 - combination ([combination.cpp](./mod/combination.cpp))
-- pow ([pow.cpp](./mod/pow.cpp))
+- pow mod([pow_mod.cpp](./mod/pow_mod.cpp))
     
 
 ## Maximum Flow Problem

@@ -49,7 +49,6 @@ struct FordFulkerson {
       flow += f;
     }
   }
-
 };
 
 // test
